@@ -1,34 +1,91 @@
 body {
-  background: #f4f4f4;
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #eaf6ff;
 }
-
-.container {
-  max-width: 400px;
-  margin: 80px auto;
-  background: #fff;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-  padding: 32px 24px;
-  text-align: center;
+header {
+    background: #2196f3;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
 }
-
-h1 {
-  margin-bottom: 12px;
-  font-size: 2em;
-  color: #222;
+header h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    font-size: 2em;
+    font-weight: bold;
+    margin: 0;
 }
-
-p {
-  margin: 8px 0;
-  color: #444;
+nav a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.2s;
 }
-a {
-  color: #0078d7;
-  text-decoration: none;
+nav a:hover {
+    color: #bbdefb;
 }
-a:hover {
-  text-decoration: underline;
+main {
+    padding: 30px;
+}
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: flex-start;
+}
+.product {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(33,150,243,0.08);
+    padding: 20px;
+    width: 220px;
+    text-align: center;
+    border: 1px solid #bbdefb;
+}
+.product img {
+    max-width: 100%;
+    border-radius: 4px;
+}
+.product button {
+    background: #2196f3;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.2s;
+}
+.product button:hover {
+    background: #1976d2;
+}
+footer {
+    background: #1976d2;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+.coolcraft-snowflake {
+    color: #e53935;
+    font-size: 1em;
+    margin-right: 2px;
+    margin-left: 0;
+    vertical-align: -0.5em;
+    display: inline-block;
+}
+.coolcraft-cool {
+    color: #e53935;
+}
+.coolcraft-logo {
+    height: 2em;
+    vertical-align: middle;
+    margin-right: 6px;
 }
