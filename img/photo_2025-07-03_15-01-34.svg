@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1">
+      <stop offset="0" stop-color="#e6eef6" />
+      <stop offset="1" stop-color="#d7e7f8" />
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="24" flood-color="#000" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <!-- фон -->
+  <rect width="1200" height="800" fill="url(#bg)" />
+
+  <!-- платформа -->
+  <rect x="120" y="140" width="960" height="520" rx="28" fill="#ffffff" filter="url(#shadow)" />
+
+  <!-- відображення продукту (реалістична іконка смартфона) -->
+  <g transform="translate(260,200)">
+    <!-- корпус -->
+    <rect x="0" y="0" width="320" height="480" rx="36" fill="#0f1724" />
+    <!-- екран -->
+    <rect x="18" y="18" width="284" height="444" rx="24" fill="#0b1220" />
+    <!-- блискання екрану -->
+    <linearGradient id="gloss" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.18" />
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0" />
+    </linearGradient>
+    <rect x="18" y="18" width="284" height="160" rx="24" fill="url(#gloss)" />
+    <!-- камера -->
+    <circle cx="160" cy="36" r="6" fill="#0b1220" stroke="#2a3b4d" stroke-width="2" />
+    <!-- контент на екрані - плитки -->
+    <g transform="translate(36,90)">
+      <rect x="0" y="0" width="64" height="64" rx="12" fill="#ffb86b" />
+      <rect x="84" y="0" width="64" height="64" rx="12" fill="#7cc3ff" />
+      <rect x="168" y="0" width="64" height="64" rx="12" fill="#b39cff" />
+
+      <rect x="0" y="84" width="220" height="120" rx="14" fill="#0b1220" opacity="0.06" />
+      <rect x="0" y="220" width="220" height="160" rx="14" fill="#0b1220" opacity="0.03" />
+    </g>
+  </g>
+
+  <!-- текст -->
+  <g transform="translate(620,260)">
+    <text x="0" y="0" font-family="Segoe UI, Arial, sans-serif" font-size="48" fill="#0f1724">Смартфон X100</text>
+    <text x="0" y="64" font-family="Segoe UI, Arial, sans-serif" font-size="28" fill="#334155">Висока продуктивність • 256GB • 48MP</text>
+    <text x="0" y="140" font-family="Segoe UI, Arial, sans-serif" font-size="36" fill="#0f1724" font-weight="700">8 000 грн</text>
+    <rect x="0" y="170" width="220" height="52" rx="10" fill="#0f1724" />
+    <text x="110" y="205" font-family="Segoe UI, Arial, sans-serif" font-size="20" fill="#ffffff" text-anchor="middle">Купити</text>
+  </g>
+
+  <!-- дрібні декоративні елементи -->
+  <circle cx="980" cy="120" r="18" fill="#e6f0ff" />
+  <circle cx="880" cy="620" r="10" fill="#d7e7f8" />
+
+</svg>
